@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b132b;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  background: #1c2541;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #5bc0be;
+}
+
+.logo { display: flex; align-items: center; }
+.logo-circle {
+  width: 35px; height: 35px; border: 2px solid #5bc0be;
+  border-radius: 50%; display: flex; justify-content: center;
+  align-items: center; margin-right: 10px; font-weight: bold; color: #5bc0be;
+}
+
+nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; }
+.contact-link {
+  background: #25d366; color: black !important;
+  padding: 8px 15px; border-radius: 20px; font-weight: bold;
+}
+
+.hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80') center/cover;
+  display: flex; justify-content: center; align-items: center; text-align: center;
+}
+
+.hero h2 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.catalog, .location-section { padding: 60px 5%; text-align: center; }
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.car-card {
+  background: #1c2541; padding: 20px; border-radius: 15px;
+  border: 1px solid #3a506b; transition: 0.4s;
+}
+
+.car-card:hover { transform: translateY(-10px); border-color: #5bc0be; }
+
+.car-img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+
+button {
+  margin-top: 15px; padding: 12px 25px; background: #5bc0be;
+  border: none; color: #0b132b; font-weight: bold;
+  cursor: pointer; border-radius: 8px; transition: 0.3s;
+}
+
+/* Стили для блока адреса */
+.address-card {
+  max-width: 500px; margin: 0 auto; padding: 40px;
+  background: #1c2541; border: 2px solid #5bc0be; border-radius: 20px;
+}
+.main-address { font-size: 22px; font-weight: bold; color: #5bc0be; margin: 10px 0; }
+.sub-address { color: #bdc3c7; margin-bottom: 20px; }
+.map-btn {
+  display: inline-block; text-decoration: none; color: #5bc0be;
+  border: 1px solid #5bc0be; padding: 10px 20px; border-radius: 20px; margin-top: 15px;
+}
+.map-btn:hover { background: #5bc0be; color: #0b132b; }
+
+footer { padding: 30px; text-align: center; color: #778da9; font-size: 14px; }
